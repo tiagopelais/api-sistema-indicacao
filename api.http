@@ -1,0 +1,36 @@
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name" : "Indicado 6",
+    "email": "indicado6@gmail.com",
+    "referrer" :"93e8ddec-ca1e-4e9c-aaf5-4e0b8ff8e719"
+}
+
+###
+GET http://localhost:3333/invites/93e8ddec-ca1e-4e9c-aaf5-4e0b8ff8e719
+
+###
+
+GET http://localhost:3333/subscribers/93e8ddec-ca1e-4e9c-aaf5-4e0b8ff8e719/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/93e8ddec-ca1e-4e9c-aaf5-4e0b8ff8e719/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/93e8ddec-ca1e-4e9c-aaf5-4e0b8ff8e719/ranking/position
+
+
+###
+
+GET http://localhost:3333/ranking
+
+###
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+    "message" : "Faça uma pergunta"
+}
